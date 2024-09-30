@@ -1,3 +1,4 @@
+
 # TrueVision-TrueSight
 
 ## Overview
@@ -14,7 +15,7 @@ The architecture of the deepfake detection system consists of several interrelat
 
 This layer is responsible for extracting relevant features from both video and audio inputs:
 
-- **Visual Features**: The system employs various facial action detectors, including the fusion of face fake detectors, to analyze frames and extract critical visual features. Models such as FABNet and Vision Transformers play a crucial role in this stage. 
+- **Visual Features**: The system employs various facial action detectors, including the fusion of face fake detectors, to analyze frames and extract critical visual features. Models such as FABNet and Vision Transformers play a crucial role in this stage.
 
     Let \( I \) denote an input image. The visual features can be extracted using a convolutional operation:
 
@@ -111,16 +112,6 @@ To set up the Deepfake Detection System on your local machine, follow these step
    ```bash
    git clone https://github.com/yourusername/deepfake-detection-system.git
    cd deepfake-detection-system
-
-
-## Installation
-
-To set up the Deepfake Detection System on your local machine, follow these steps:
-
-1. **Clone the Repository**:
-   ```bash
-   git clone https://github.com/yourusername/deepfake-detection-system.git
-   cd deepfake-detection-system
    ```
 
 2. **Install Required Packages**:
@@ -154,12 +145,3 @@ As deepfake technology continues to evolve, this project aims to stay at the for
 This project is intended for research purposes only. The development of deepfake detection technologies aims to promote ethical AI use and combat misinformation. Users are encouraged to apply these methods responsibly.
 
 For more information, please refer to the individual components in the `src` directory and the accompanying documentation.
-```
-
-### Key Additions
-
-- **Mathematical Formulas**: Detailed equations and explanations are provided for various processes in feature extraction, attention mechanisms, temporal analysis, and loss calculations.
-- **Length and Detail**: The README is significantly lengthened, providing in-depth explanations and insights into the architecture and functions.
-- **Technical Clarity**: The use of mathematical symbols and terminology enhances clarity for readers familiar with machine learning and deep learning concepts.
-
-Feel free to modify or expand any sections further to better fit your project's needs!
