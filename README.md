@@ -1,6 +1,7 @@
 
 # TrueVision-TrueSight
 
+
 ## Overview
 
 The Deepfake Detection System is a sophisticated project aimed at identifying and mitigating the risks associated with deepfake technology. As deepfakes become increasingly sophisticated, it is essential to develop robust methods for detection and analysis. This project leverages advanced machine learning techniques, including Convolutional Neural Networks (CNNs), Recurrent Neural Networks (RNNs), and ensemble methods, to deliver a reliable deepfake detection solution.
@@ -15,7 +16,7 @@ The architecture of the deepfake detection system consists of several interrelat
 
 This layer is responsible for extracting relevant features from both video and audio inputs:
 
-- **Visual Features**: The system employs various facial action detectors, including the fusion of face fake detectors, to analyze frames and extract critical visual features. Models such as FABNet and Vision Transformers play a crucial role in this stage.
+- **Visual Features**: The system employs various facial action detectors, including the fusion of face fake detectors, to analyze frames and extract critical visual features. Models such as FABNet and Vision Transformers play a crucial role in this stage. 
 
     Let \( I \) denote an input image. The visual features can be extracted using a convolutional operation:
 
@@ -64,18 +65,23 @@ Temporal analysis is critical for understanding how media evolves over time. The
 \[
 f_t = \sigma(W_f \cdot [h_{t-1}, x_t] + b_f) \quad \text{(Forget Gate)}
 \]
+
 \[
 i_t = \sigma(W_i \cdot [h_{t-1}, x_t] + b_i) \quad \text{(Input Gate)}
 \]
+
 \[
 \tilde{C}_t = \tanh(W_C \cdot [h_{t-1}, x_t] + b_C) \quad \text{(Cell State)}
 \]
+
 \[
 C_t = f_t \cdot C_{t-1} + i_t \cdot \tilde{C}_t \quad \text{(Cell State Update)}
 \]
+
 \[
 o_t = \sigma(W_o \cdot [h_{t-1}, x_t] + b_o) \quad \text{(Output Gate)}
 \]
+
 \[
 h_t = o_t \cdot \tanh(C_t) \quad \text{(Hidden State)}
 \]
@@ -99,10 +105,20 @@ To further enhance the system's capabilities, this layer incorporates various te
 Utilized for improving the embedding quality of the data, the triplet loss function helps in optimizing the model to distinguish between real and fake instances effectively. The triplet loss is defined as:
 
 \[
-L(a, p, n) = \max(0, \|f(a) - f(p)\|^2 - \|f(a) - f(n)\|^2 + \alpha)
+L(a, p, n) = \max\left(0, \|f(a) - f(p)\|^2 - \|f(a) - f(n)\|^2 + \alpha\right)
 \]
 
 where \( a \) is the anchor, \( p \) is the positive sample, \( n \) is the negative sample, and \( \alpha \) is the margin. This loss function encourages the model to pull together embeddings of similar instances while pushing apart embeddings of dissimilar instances.
+
+## Installation
+
+To set up the Deepfake Detection System on your local machine, follow these steps:
+
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/yourusername/deepfake-detection-system.git
+   cd deepfake-detection-system
+
 
 ## Installation
 
