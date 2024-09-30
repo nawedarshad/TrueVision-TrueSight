@@ -37,7 +37,7 @@ Deepfake technology manipulates visual and audio data to create realistic forger
 1. Clone the repository:
     ```bash
     git clone https://github.com/nawedarshad/TrueVision-TrueSight.git
-    cd deepfake-detection
+    cd TrueVision-TrueSight
     ```
 
 2. Install dependencies:
