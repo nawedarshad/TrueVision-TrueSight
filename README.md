@@ -12,6 +12,10 @@ The system focuses on analyzing both visual and audio components of media files,
 
 The architecture of the deepfake detection system consists of several interrelated components designed to effectively extract, analyze, and classify media content. The system can be divided into the following layers:
 
+## Flowchart
+
+![System Architecture](image.png)
+
 ### 1. **Feature Extraction Layer**
 
 This layer is responsible for extracting relevant features from both video and audio inputs:
@@ -126,8 +130,8 @@ To set up the Deepfake Detection System on your local machine, follow these step
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/yourusername/deepfake-detection-system.git
-   cd deepfake-detection-system
+   git clone https://github.com/nawedarshad/TrueVision-TrueSight.git
+   cd TrueVision-TrueSight
    ```
 
 2. **Install Required Packages**:
